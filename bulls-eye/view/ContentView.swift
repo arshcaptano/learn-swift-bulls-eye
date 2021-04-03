@@ -14,8 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-            Color("BackgroundColor")
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+           BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
                 SliderView(sliderValue: $sliderValue)
@@ -76,15 +75,20 @@ struct HitMeButton: View {
         )
         .foregroundColor(.white)
         .cornerRadius(21.0)
+        .overlay(RoundedRectangle(cornerRadius: 21.0)
+                    .strokeBorder(Color.white, lineWidth: 2.0))
         .alert(
             isPresented: $isAlertVisible,
             content: {
                 let roundedValue = Int(sliderValue.rounded())
+                let points = game.points(sliderValue: roundedValue)
                 return Alert(
                     title: Text("Hello"),
                     message: Text("The slider's value is \(roundedValue).\n" +
-                                    "You scored \(game.points(sliderValue: roundedValue)) points in this round."),
-                    dismissButton: .default(Text("Close")))
+                                    "You scored \(points) points in this round."),
+                    dismissButton: .default(Text("Awesome!")){
+                        game.startNewRound(points: points)
+                    })
             })
     }
 }
