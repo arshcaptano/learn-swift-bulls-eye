@@ -17,6 +17,7 @@
 		E9A077002615FD7500DF6A31 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A076FF2615FD7500DF6A31 /* Shapes.swift */; };
 		E9A077042616307300DF6A31 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A077032616307300DF6A31 /* RoundedViews.swift */; };
 		E9A077082618694400DF6A31 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A077072618694400DF6A31 /* BackgroundView.swift */; };
+		E9C40284261DC98100B508AA /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C40283261DC98100B508AA /* PointsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E9A076FF2615FD7500DF6A31 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		E9A077032616307300DF6A31 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		E9A077072618694400DF6A31 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		E9C40283261DC98100B508AA /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				E9A076FF2615FD7500DF6A31 /* Shapes.swift */,
 				E9A077032616307300DF6A31 /* RoundedViews.swift */,
 				E9A077072618694400DF6A31 /* BackgroundView.swift */,
+				E9C40283261DC98100B508AA /* PointsView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				E9A077042616307300DF6A31 /* RoundedViews.swift in Sources */,
 				E98569B82614759E00FF68FC /* ContentView.swift in Sources */,
 				E9A076FC2615E74B00DF6A31 /* TextViews.swift in Sources */,
+				E9C40284261DC98100B508AA /* PointsView.swift in Sources */,
 				E9A077082618694400DF6A31 /* BackgroundView.swift in Sources */,
 				E9A077002615FD7500DF6A31 /* Shapes.swift in Sources */,
 				E98569CD2614769600FF68FC /* Game.swift in Sources */,

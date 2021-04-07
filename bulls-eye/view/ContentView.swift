@@ -14,11 +14,20 @@ struct ContentView: View {
     
     var body: some View {
         ZStack{
-           BackgroundView(game: $game)
+            BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
-                SliderView(sliderValue: $sliderValue)
-                HitMeButton(game: $game, sliderValue: $sliderValue, isAlertVisible: $isAlertVisible)
+                    .padding(.bottom, isAlertVisible ? 0 : 100.0)
+                
+                if isAlertVisible {
+                    PointsView(game: $game, sliderValue: $sliderValue, isAlertVisible: $isAlertVisible)
+                }else{
+                    HitMeButton(game: $game, sliderValue: $sliderValue, isAlertVisible: $isAlertVisible)
+                }
+            }
+            
+            if !isAlertVisible {
+            SliderView(sliderValue: $sliderValue)
             }
         }
     }
@@ -75,21 +84,11 @@ struct HitMeButton: View {
         )
         .foregroundColor(.white)
         .cornerRadius(21.0)
-        .overlay(RoundedRectangle(cornerRadius: 21.0)
-                    .strokeBorder(Color.white, lineWidth: 2.0))
-        .alert(
-            isPresented: $isAlertVisible,
-            content: {
-                let roundedValue = Int(sliderValue.rounded())
-                let points = game.points(sliderValue: roundedValue)
-                return Alert(
-                    title: Text("Hello"),
-                    message: Text("The slider's value is \(roundedValue).\n" +
-                                    "You scored \(points) points in this round."),
-                    dismissButton: .default(Text("Awesome!")){
-                        game.startNewRound(points: points)
-                    })
-            })
+        .overlay(
+            RoundedRectangle(cornerRadius: 21.0)
+                .strokeBorder(Color.white, lineWidth: 2.0)
+        )
+        
     }
 }
 
