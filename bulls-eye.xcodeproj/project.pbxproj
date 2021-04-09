@@ -18,6 +18,7 @@
 		E9A077042616307300DF6A31 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A077032616307300DF6A31 /* RoundedViews.swift */; };
 		E9A077082618694400DF6A31 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A077072618694400DF6A31 /* BackgroundView.swift */; };
 		E9C40284261DC98100B508AA /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C40283261DC98100B508AA /* PointsView.swift */; };
+		E9C402882620C0BA00B508AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C402872620C0BA00B508AA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		E9A077032616307300DF6A31 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		E9A077072618694400DF6A31 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		E9C40283261DC98100B508AA /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
+		E9C402872620C0BA00B508AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				E98569CC2614769600FF68FC /* Game.swift */,
+				E9C402872620C0BA00B508AA /* Constants.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				E9C40284261DC98100B508AA /* PointsView.swift in Sources */,
 				E9A077082618694400DF6A31 /* BackgroundView.swift in Sources */,
 				E9A077002615FD7500DF6A31 /* Shapes.swift in Sources */,
+				E9C402882620C0BA00B508AA /* Constants.swift in Sources */,
 				E98569CD2614769600FF68FC /* Game.swift in Sources */,
 				E98569B62614759E00FF68FC /* bulls_eyeApp.swift in Sources */,
 			);
